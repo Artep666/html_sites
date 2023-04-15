@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body, html{
+    font-size: 100%;
+    font-family: "Helvetica", sans-serif;
+}
+body,html{
+    margin:0;
+    padding: 0;
+}
+
+nav ul{
+    list-style: none;
+    padding:0;
+    background:#444;
+}
+
+nav ul li a{
+    color:#ddd;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    line-height: 1;
+}
+nav ul li{
+    border-bottom: 1px dotted #ddd;
+}
+/*styling logo*/
+
+nav div:first-child{
+    background:#222;
+}
+nav div:first-child h1{
+    line-height: 0;
+    padding: .8rem 0rem;
+    text-align: center;
+}
+nav div:first-child img{
+    filter: contrast(0);
+}
+
+nav div:first-child h1, nav ul{
+    margin:0;
+}
+
+/*Styling for larger devices*/
+
+@media only screen and (min-width: 30em){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background: #222;
+        align-items: center;
+    }
+    
+    nav ul{
+        display: flex;
+        align-items: center;
+        background:none;
+        flex-wrap: wrap;
+    }
+    nav div:first-child h1{
+        padding: 0;
+        margin:0 1rem;
+    }
+    nav div:first-child img{
+        height: 40px;
+        
+    }
+    nav ul li{
+        border-bottom:none;
+        flex: 1 0 auto;
+        position: relative;
+    }
+    nav ul li a{
+        padding:1.2rem 1rem;
+    }
+    nav ul li a::before, nav ul li a::after{
+        content: "";
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width:0%;
+        height: 2px;
+        background:rgb(255, 208, 0);
+        transition: .2s width ease-in-out;
+    }
+    
+    nav ul li a::before{
+        left:0;
+    }
+    
+    nav ul li a:hover::after,nav ul li a:hover::before{
+        width: 50%;
+    } 
+   
+}
+
+    </style>
+<body>
+  <nav>
+    <div>
+        <h1><a href="#"><img src="logo.png" alt="logo"></a></h1>
+    </div>
+    
+    <ul>
+         <li><a href="start.html">Home</a></li>
+         <li><a href="menu.html">Menu</a></li>
+         <li><a href="reservations.html">Reservations</a></li>
+         <li><a href="aboutus.html">About Us</a></li>
+      
+     </ul>
+</nav>
+
+
+<div class="welcome">
+  <h2>Добре дошли</h2>
+  <img src="51951042270_78ea1e8590_h.7.jpg">
+  <p>Изискана кухня, спираща дъха панорамна гледка към Пловдив и топло посрещане. Независимо дали сте на специална романтична вечеря, бизнес среща или просто искате да се насладите на мига с любимо питие на някое сепаре, Ресторант BELLE VUE може да Ви предложи това и много повече. Той е с капацитет над 300 места и съчетава стилната и завладяваща атмосфера с несравнимите топлина и уют, които предлага семейна вечеря у дома. Подарете си наслада за всички сетива и уловете момента с чаша вино от специална селекция и апетитно ястие. А всичко това – под акомпанимента на акустичен роял (част от музикалната ни програма всяка събота).
+  </p>
+     </div>
+</body>
+</html>
