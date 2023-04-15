@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6please</title>
+<style>
+body{
+  background-image: linear-gradient(to bottom right, rgb(39, 7, 126), rgb(255, 8, 214));}
+.wrapper{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+ main, aside, footer{
+    background-color: rgb(232, 227, 255,0.5);
+    box-shadow: 0px 0px 5px black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 0px;
+}
+.main-wrapper{
+    display: flex;
+    width: 100%;
+
+}
+main{
+    width: 60%;
+}
+aside{
+    width: 40%;
+}
+
+h1{text-align: center;
+color:white ;}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(232, 227, 255,0.5);
+  margin: 5px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #17009996;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-image: linear-gradient(to bottom right, rgb(146, 201, 233), rgb(255, 140, 236));
+  color: white;
+}
+
+.topnav a.active {
+  background-image: linear-gradient(to bottom right, rgb(0, 160, 209), rgb(255, 8, 214));
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+h5{
+text-align: center;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(to bottom right, rgb(0, 160, 209), rgb(255, 8, 214));
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-image: linear-gradient(to bottom right, rgb(19, 0, 105), rgb(155, 0, 85));
+
+}
+</style>
+
+
+</head>
+<body>
+  <div class="wrapper">
+
+      <header class="head-wrapper">
+        <div>
+          <h1>✧ My dumbass hobbies ✧
+            </h1>
+            <br><br><br>
+      </div>
+      </header>
+
+
+          <div class="topnav" id="myTopnav">
+            <a href="itried.html" class="active"><b>Home</b></a>
+            <a href="DnD.html"><b>Dnd bb</b></a>
+            <a href="Coding.html"><b>Coding</b></a>
+            <a href="Rubix cube.html"><b>Rubix cube</b></a>
+            <a href="Drawing.html"><b>Drawing</b></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars">¯\_(ツ)_/¯</i>
+            </a>
+          </div>
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+          
+          
+
+      <div class="main-wrapper"> 
+
+          <main class="page-main">
+            
+            <h3>Heyoooo</h3>
+            
+            <p>My name is petra and this respresents my hobbies.Why dumbass?Well because i am a dumbass .Easy as that!</p>
+            <br>
+            <p>Now for the site,u just have to click which of my dumbass side u want to check out with the buttons under all this kinda useless information!</p>
+          </main>
+
+
+          <aside class="page-aside">aside</aside>
+
+      </div>
+
+      <footer class="page-footer"><h5>Azedrotux | 2023</h5></footer>
+
+      </div>
+  </div>
+  
+  </div>
+  <div class="backtothetop">
+    
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+<script>
+//code for the mf tothetopbutton
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+  </div>
+  </body>
+</html>
